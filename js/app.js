@@ -5,11 +5,11 @@
 
 // Global state holding update manifest data
 let currentManifest = {
-  versionCode: 1,
-  versionName: "1.0.0",
+  versionCode: 2,
+  versionName: "1.0.1",
   apkUrl: "https://buildpdf-5ui9.onrender.com/downloads/app-release.apk",
-  sha256: "a7d31e8e5aa2a23ea6d201c1a7087dfd9113d02166d269d61316721ac54b4d90",
-  releaseNotes: "Initial release"
+  sha256: "7c48ab58198f2fda5eb74be4997ad6e2d187c34375ad9713d7f94a17c53f0260",
+  releaseNotes: "Updated in-app update service and bug fixes"
 };
 
 // UI Elements
