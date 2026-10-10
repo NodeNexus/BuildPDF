@@ -1,7 +1,7 @@
 {
   "versionCode": 1,
   "versionName": "1.0.0",
-  "apkUrl": "https://YOUR-RENDER-DOMAIN/downloads/app-release.apk",
-  "sha256": "REPLACE_WITH_SHA256",
+  "apkUrl": "https://buildpdf-updates.onrender.com/downloads/app-release.apk",
+  "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
   "releaseNotes": "Initial release"
 }
