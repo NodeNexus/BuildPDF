@@ -7,8 +7,8 @@
 let currentManifest = {
   versionCode: 1,
   versionName: "1.0.0",
-  apkUrl: "/downloads/app-release.apk",
-  sha256: "REPLACE_WITH_SHA256",
+  apkUrl: "https://buildpdf-updates.onrender.com/downloads/app-release.apk",
+  sha256: "a7d31e8e5aa2a23ea6d201c1a7087dfd9113d02166d269d61316721ac54b4d90",
   releaseNotes: "Initial release"
 };
 
