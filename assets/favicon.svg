@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer rounded badge with gradient border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="url(#glowGrad)" stroke-width="2.5" />
+
+  <!-- PDF Document Shape -->
+  <path d="M20 13H36L45 22V49C45 51.2 43.2 53 41 53H20C17.8 53 16 51.2 16 49V17C16 14.8 17.8 13 20 13Z" fill="url(#pageGrad)" stroke="#38BDF8" stroke-width="1.8" />
+  
+  <!-- Folded Corner -->
+  <path d="M36 13V22H45" fill="#334155" stroke="#38BDF8" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- PDF Red/Emerald Pill -->
+  <rect x="21" y="27" width="22" height="11" rx="3" fill="url(#accentGrad)" />
+  <text x="32" y="35.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="7.5" fill="#04100E" text-anchor="middle" letter-spacing="0.5">PDF</text>
+
+  <!-- Document Line Accents -->
+  <line x1="21" y1="43" x2="39" y2="43" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round" />
+  <line x1="21" y1="47.5" x2="33" y2="47.5" stroke="#64748B" stroke-width="1.8" stroke-linecap="round" />
+</svg>
