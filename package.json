@@ -1,19 +1,19 @@
 {
-  "name": "android-update-host",
+  "name": "buildpdf-updates",
   "version": "1.0.0",
-  "description": "Production-ready static website and manifest host for Android app updates deployed on Render",
+  "description": "Official Android update website for BuildPDF by Vaishnav Balpande",
   "scripts": {
     "start": "node scripts/serve.js",
     "dev": "node scripts/serve.js",
     "update-manifest": "node scripts/generate-manifest.js"
   },
   "keywords": [
+    "buildpdf",
     "android",
     "apk-hosting",
     "app-updates",
-    "render-static-site",
-    "in-app-updates"
+    "render-static-site"
   ],
-  "author": "",
+  "author": "Vaishnav Balpande <vaishdev.work@gmail.com>",
   "license": "MIT"
 }

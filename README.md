@@ -1,9 +1,9 @@
-# Android App Update & APK Distribution Host
+# BuildPDF - Android App Update & APK Distribution Host
 
-A lightweight, production-ready static website and manifest distribution service for hosting Android application updates on **Render Static Sites**.
+Official static website and update manifest distribution service for **BuildPDF** (developed by **Vaishnav Balpande**), hosted on **Render Static Sites**.
 
 This project provides:
-1. **Responsive Branded Landing Page** with dark glassmorphism design, clear **Download APK** button, technical specifications, release changelog, package checksums, and a mobile QR code scanner.
+1. **Responsive Branded Landing Page** for **BuildPDF** with dark glassmorphism design, direct **Download APK** button, technical specifications, release changelog, package checksums, and a mobile QR code scanner.
 2. **In-App Update Manifest (`/update.json`)** formatted for Android in-app update checkers, pre-configured with **CORS** (`Access-Control-Allow-Origin: *`) and cache-invalidation headers.
 3. **Automated Manifest Tools** (`Node.js`, `PowerShell`, `Bash`) to automatically compute SHA-256 hashes and update version metadata with one command.
 4. **Security Guardrails** configured via `.gitignore` to prevent committing Android keystores (`*.jks`, `*.keystore`), credentials, or signing keys.
@@ -38,12 +38,15 @@ BuildPDF/
 
 ## ⚙️ Configuration & Placeholders
 
-Before deploying, fill in these two placeholders:
+The site is already branded for **BuildPDF** developed by **Vaishnav Balpande**.
 
-| Placeholder | Where to Replace | Example Value |
+When you deploy to Render, fill in your Render domain:
+
+| Setting | Location | Example Value |
 | :--- | :--- | :--- |
-| `[YOUR_APP_NAME]` | `index.html` (titles, branding, footer), `render.yaml` | `PDFMaster`, `QuickScan` |
-| `YOUR-RENDER-DOMAIN` | `update.json` (`apkUrl` field) | `my-app-updates.onrender.com` |
+| **App Name** | Configured as `BuildPDF` in `index.html` | `BuildPDF` |
+| **Developer** | Configured as `Vaishnav Balpande` | `Vaishnav Balpande` |
+| **Render Domain** | `update.json` (`apkUrl` field) | `https://buildpdf-updates.onrender.com` |
 
 ---
 

@@ -1,6 +1,6 @@
 services:
   - type: static
-    name: YOUR-APP-NAME-updates
+    name: buildpdf-updates
     buildCommand: ""
     staticPublishPath: .
     pullRequestPreviewsEnabled: false
