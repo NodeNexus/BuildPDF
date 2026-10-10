@@ -1,0 +1,19 @@
+{
+  "name": "android-update-host",
+  "version": "1.0.0",
+  "description": "Production-ready static website and manifest host for Android app updates deployed on Render",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "dev": "node scripts/serve.js",
+    "update-manifest": "node scripts/generate-manifest.js"
+  },
+  "keywords": [
+    "android",
+    "apk-hosting",
+    "app-updates",
+    "render-static-site",
+    "in-app-updates"
+  ],
+  "author": "",
+  "license": "MIT"
+}

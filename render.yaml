@@ -1,0 +1,42 @@
+services:
+  - type: static
+    name: YOUR-APP-NAME-updates
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      # Android Update Manifest: Enable CORS and disable caching so updates propagate instantly
+      - path: /update.json
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /update.json
+        name: Access-Control-Allow-Methods
+        value: "GET, OPTIONS"
+      - path: /update.json
+        name: Content-Type
+        value: "application/json; charset=utf-8"
+      - path: /update.json
+        name: Cache-Control
+        value: "no-cache, no-store, must-revalidate"
+
+      # APK Download Directory: Set correct Android APK MIME type and allow CORS
+      - path: /downloads/*
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /downloads/*
+        name: Content-Type
+        value: "application/vnd.android.package-archive"
+      - path: /downloads/*
+        name: Cache-Control
+        value: "public, max-age=86400"
+
+      # Global security headers for the landing website
+      - path: /*
+        name: X-Frame-Options
+        value: "SAMEORIGIN"
+      - path: /*
+        name: X-Content-Type-Options
+        value: "nosniff"
+      - path: /*
+        name: Referrer-Policy
+        value: "strict-origin-when-cross-origin"

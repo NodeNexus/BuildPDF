@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[YOUR_APP_NAME] - Official Android APK Download & Updates</title>
+  <meta name="description" content="Download the official latest release APK for [YOUR_APP_NAME] on Android. Release notes, SHA-256 verification, and in-app update manifest.">
+  <meta name="theme-color" content="#090D16">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[YOUR_APP_NAME] - Android App Download">
+  <meta property="og:description" content="Get the latest Android release for [YOUR_APP_NAME]. Fast direct APK download with verified checksum.">
+  <meta property="og:image" content="assets/og-image.png">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Ambient background grid pattern -->
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="brand" id="brandLogoLink">
+        <div class="brand-icon" aria-hidden="true">
+          <!-- Android Brand / Shield Icon SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="3"></rect>
+            <path d="M12 18h.01"></path>
+            <path d="M9 2v-1"></path>
+            <path d="M15 2v-1"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">[YOUR_APP_NAME]</span>
+          <span class="brand-subtitle">Android Distribution</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <span class="status-badge" id="systemStatusBadge">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Build Verified</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="downloadSection">
+      <div class="container">
+        <!-- Version Badge -->
+        <div class="version-pill">
+          <span id="versionName">v1.0.0</span>
+          <span class="version-tag" id="versionCode">(Build 1)</span>
+          <span>• Latest Stable</span>
+        </div>
+
+        <h1 class="hero-title">
+          Download <span class="gradient-text">[YOUR_APP_NAME]</span> for Android
+        </h1>
+
+        <p class="hero-desc">
+          Get the official release directly on your phone or tablet. Fast, verified, and free of third-party bloatware.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="cta-group">
+          <a href="downloads/app-release.apk" class="btn btn-primary" id="downloadApkBtn" download="app-release.apk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download APK</span>
+          </a>
+
+          <a href="update.json" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="viewManifestBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>View update.json</span>
+          </a>
+        </div>
+
+        <!-- Quick Specifications Strip -->
+        <div class="spec-strip">
+          <div class="spec-item">
+            <span class="spec-label">Target OS</span>
+            <span class="spec-value">Android 7.0+</span>
+          </div>
+          <div class="spec-divider" aria-hidden="true"></div>
+          <div class="spec-item">
+            <span class="spec-label">Architecture</span>
+            <span class="spec-value">Universal (ARM / x86)</span>
+          </div>
+          <div class="spec-divider" aria-hidden="true"></div>
+          <div class="spec-item">
+            <span class="spec-label">File Type</span>
+            <span class="spec-value">Standalone APK</span>
+          </div>
+          <div class="spec-divider" aria-hidden="true"></div>
+          <div class="spec-item">
+            <span class="spec-label">Update Channel</span>
+            <span class="spec-value">Stable Release</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Release Notes & Integrity Section -->
+    <section class="container" id="detailsSection">
+      <div class="grid-container">
+        <!-- Release Notes Card -->
+        <div class="card release-notes-card" id="releaseNotesCard">
+          <div class="notes-header">
+            <div class="notes-meta">
+              <span class="notes-version">What's New in this Version</span>
+            </div>
+            <span class="spec-label">Changelog</span>
+          </div>
+
+          <div class="notes-body" id="releaseNotes">
+Initial release
+          </div>
+
+          <ul class="highlights-list">
+            <li class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Official standalone release package for Android devices.</span>
+            </li>
+            <li class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Built with strict security integrity and verified signature.</span>
+            </li>
+            <li class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Integrated auto-update manifest support for seamless updates.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SHA-256 Checksum Card -->
+        <div class="card checksum-card" id="checksumCard">
+          <h2 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Package Integrity
+          </h2>
+          <p class="checksum-info">
+            Verify your downloaded APK file against the official SHA-256 fingerprint to ensure it hasn't been modified or tampered with.
+          </p>
+
+          <div class="hash-container">
+            <code class="hash-text" id="sha256Hash">REPLACE_WITH_SHA256</code>
+            <button type="button" class="copy-btn" id="copyHashBtn" title="Copy SHA-256 Hash">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="verify-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots" aria-hidden="true">
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+              </div>
+              <span>Checksum Verification Command</span>
+            </div>
+            <div class="terminal-content">
+              <span># Windows PowerShell:</span><br>
+              <code>Get-FileHash app-release.apk -Algorithm SHA256</code><br><br>
+              <span># macOS / Linux:</span><br>
+              <code>sha256sum app-release.apk</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- In-App Update Manifest & QR Code Container -->
+        <div class="card full-width-card" id="manifestInspectorCard">
+          <div class="inspector-tabs">
+            <button type="button" class="tab-btn active" data-tab="tab-manifest" id="tabManifestBtn">In-App Update Manifest (/update.json)</button>
+            <button type="button" class="tab-btn" data-tab="tab-qr" id="tabQrBtn">Scan QR Code (Mobile Install)</button>
+          </div>
+
+          <!-- Tab 1: Manifest Inspector -->
+          <div class="tab-content" id="tab-manifest">
+            <div class="manifest-toolbar">
+              <div>
+                <span class="manifest-url-badge">GET /update.json</span>
+                <span class="status-badge" id="apiStatus" style="margin-left: 0.5rem;">CORS Enabled</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem;">
+                <button type="button" class="copy-btn" id="copyManifestBtn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy JSON</span>
+                </button>
+                <a href="update.json" class="copy-btn" id="rawManifestLink" target="_blank" rel="noopener noreferrer">
+                  <span>Open Raw</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="manifest-block">
+              <pre><code id="manifestJson">{
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkUrl": "https://YOUR-RENDER-DOMAIN/downloads/app-release.apk",
+  "sha256": "REPLACE_WITH_SHA256",
+  "releaseNotes": "Initial release"
+}</code></pre>
+            </div>
+          </div>
+
+          <!-- Tab 2: QR Code Quick Download -->
+          <div class="tab-content" id="tab-qr" style="display: none;">
+            <div class="qr-layout">
+              <div class="qr-box">
+                <canvas id="qrCanvas" width="180" height="180"></canvas>
+              </div>
+              <div class="qr-info">
+                <h4>Direct Mobile Download</h4>
+                <p>Open your Android device's camera or QR code scanner to download the APK file directly onto your phone without connecting to a computer.</p>
+                <div>
+                  <span class="spec-label">Target URL:</span>
+                  <div class="qr-url-text" id="qrUrlText">/downloads/app-release.apk</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Installation Instructions Card -->
+        <div class="card full-width-card" id="installationGuideCard">
+          <h2 class="section-title">How to Install on Android</h2>
+          <p class="section-subtitle">Follow these quick steps if you are installing an APK directly outside Google Play Store.</p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3 class="step-title">Download APK</h3>
+              <p class="step-desc">Tap the <strong>Download APK</strong> button above to download <code>app-release.apk</code> to your device's Downloads folder.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3 class="step-title">Allow Unknown Sources</h3>
+              <p class="step-desc">If prompted by your browser, enable <em>"Allow from this source"</em> in <strong>Settings &gt; Apps &gt; Special app access &gt; Install unknown apps</strong>.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3 class="step-title">Install &amp; Open</h3>
+              <p class="step-desc">Open the downloaded APK file from your notification bar or file manager and tap <strong>Install</strong> to finish setup.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <p>&copy; <span id="currentYear">2026</span> <strong>[YOUR_APP_NAME]</strong>. All rights reserved.</p>
+        <p style="font-size: 0.75rem; margin-top: 0.25rem;">Official Android application updates hosted on Render.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="update.json">Manifest (/update.json)</a>
+        <a href="downloads/app-release.apk" download>Direct APK</a>
+        <span class="render-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Render Static Site
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

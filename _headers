@@ -1,0 +1,19 @@
+# Global Security Headers
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Android Update Manifest: CORS enabled, JSON content-type, no cache
+/update.json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Android APK file downloads
+/downloads/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/vnd.android.package-archive
+  Cache-Control: public, max-age=86400

@@ -1,0 +1,40 @@
+# ==========================================
+# Security: Android Signing Keys & Credentials
+# ==========================================
+# NEVER commit keystores, certificates, or private keys
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.pk8
+key.properties
+keystore.properties
+local.properties
+google-services.json
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+secrets.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / Build artifacts (if using build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.cache/
