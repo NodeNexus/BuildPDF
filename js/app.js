@@ -7,7 +7,7 @@
 let currentManifest = {
   versionCode: 1,
   versionName: "1.0.0",
-  apkUrl: "https://buildpdf-updates.onrender.com/downloads/app-release.apk",
+  apkUrl: "https://buildpdf-5ui9.onrender.com/downloads/app-release.apk",
   sha256: "a7d31e8e5aa2a23ea6d201c1a7087dfd9113d02166d269d61316721ac54b4d90",
   releaseNotes: "Initial release"
 };
@@ -71,11 +71,10 @@ function renderManifestData() {
   const hash = currentManifest.sha256 || 'REPLACE_WITH_SHA256';
   const notes = currentManifest.releaseNotes || 'Initial release';
   
-  // Format download link: if it contains placeholder or relative, adapt intelligently
+  // Format download link: ensure QR code and download button always point to active live domain
   let finalDownloadUrl = currentManifest.apkUrl || '/downloads/app-release.apk';
-  if (finalDownloadUrl.includes('YOUR-RENDER-DOMAIN')) {
-    // If running in browser and domain placeholder wasn't swapped yet, link directly to local relative path
-    finalDownloadUrl = window.location.origin + '/downloads/app-release.apk';
+  if (window.location.origin && window.location.origin.startsWith('http')) {
+    finalDownloadUrl = new URL('/downloads/app-release.apk', window.location.origin).href;
   }
 
   // Update hero badges
